@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Recebíveis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de Juros</h1>
+    </header>
+    <main>
+            <form action="#" id="formulario">
+                <fieldset>
+                    <legend>
+                        Ingresse os dados para calcular os juros
+                    </legend>
+                    
+                    <label for="clientName">Ingresse o nome do cliente</label>
+                    <input type="text" placeholder="Nome e Sobrenome" id="clientName">
+    
+                    <label for="expirationDate">Ingresse a data de vencimento</label>
+                    <input type="date" id="expirationDate">
+    
+                    <label for="amount">Valor do Recebível</label>
+                    <input type="number" name="" id="amount" placeholder="R$" step="0.01" min="0">
+    
+                </fieldset>
+                <button type="button" id="ingressarDados">Ingressar Dados</button>
+                
+            </form>    
+        <section>
+            <h2>Tabela de Recebíveis</h2>
+            <button type="button" id="ingressarJuros">Calcular Juros</button>
+            <div id="buttonGroup">
+                <button type="button" id="agrupar">Agrupar os Recebíveis <br> por Nome</button>
+                <button type="button" id="porData">Agrupar os Recebíveis <br> por Data</button>
+            </div>
+            <form action="#" id="filtersForm">
+                <fieldset>
+                    <legend>Filtrar por datas de vencimento</legend>
+    
+                    <label for="firstDate">Data de início</label>
+                    <input type="date" name="" id="firstDate">
+    
+                    <label for="endDate">Data final</label>
+                    <input type="date" name="" id="endDate">
+    
+                    <button type="button" id="dateFilterButton">Filtrar</button>
+    
+                </fieldset>
+    
+                <fieldset id="filterValueRangeInputs">
+                    <legend>Filtrar por valores sem os juros</legend>
+    
+                    <label for="firstValue">Valor mínimo</label>
+                    <input type="number" name="" id="firstValue" placeholder="R$" step="0.01" min="0">
+    
+                    <label for="endValue">Valor máximo</label>
+                    <input type="number" name="" id="endValue" placeholder="R$" step="0.01" min="0">
+    
+                    <button type="button" id="valueFilterButton">Filtrar</button>
+    
+                </fieldset>
+            </form>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6" id="primeiroTitulo">Recebíveis</th>
+                    </tr>
+                    <tr>
+                        <th class="segTitulo">Nome do Cliente</th>
+                        <th class="segTitulo">Data de Vencimento</th>
+                        <th class="segTitulo">Valor do Recebível</th>
+                        <th class="segTitulo">Dias de Atraso</th>
+                        <th class="segTitulo">Juros</th>
+                        <th class="segTitulo">Valor Total com Juros</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </section>
+    </main>
+    <script src="recebiveis.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 174, 216);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    size: 200%;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+}
+
+fieldset {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    size: 2rem;
+    gap: 2%;
+    box-sizing: content-box;
+}
+
+input[type="date"] {
+    width: 180px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table{
+    border-spacing: 9px;
+    background-color: rgb(24, 24, 136);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#buttonGroup {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+
+button {
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    line-height: 20px; 
+    padding: 9px; 
+    border-radius: 14px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(120, 136, 164) 0%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.52) 1px 3px 5px 0px; 
+    display: inline-block;
+}
+
+button:hover {
+    background: #7888A4; 
+}
+
+button:active {
+    background: #144E75; 
+}
+
+#primeiroTitulo {
+    font-size: 22px;
+}
+
+.segTitulo {
+    font-size: 18px;
+}
+
+td {
+    color: rgb(152, 205, 230);
+}
